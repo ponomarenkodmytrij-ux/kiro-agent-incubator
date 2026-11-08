@@ -32,6 +32,28 @@ This file contains a large variety of UI effects, techniques, and design pattern
 19. **Emerald Fire** — gradient from `#11998e` to `#38ef7d`, bg: `#0a1a15`
 20. **Blood Moon** — gradient from `#ed213a` to `#93291e`, bg: `#1a0a0a`
 
+### Bold / Saturated
+21. **Klein Blue** — `#002fa7`, `#001f6e`, `#0a0a1a`, accent: `#ffffff` (pure white on IKB)
+22. **Electric Tangerine** — `#ff5e00`, `#ff8c42`, `#1a0d00`, accent: `#00e5ff` (cyan pop)
+23. **Acid Lab** — `#dfff00` (acid), `#111111`, `#1f1f1f`, accent: `#ff00e5` (magenta)
+24. **Deep Teal + Coral** — `#003f3f`, `#0a2626`, accent: `#ff6f61` (living coral)
+25. **Ultraviolet** — `#5f00ba`, `#2a004f`, `#120021`, accent: `#f6ff00` (yellow)
+26. **Oxblood Luxe** — `#4a0e0e`, `#2a0808`, `#140404`, accent: `#d4af37` (antique gold)
+
+### Muted / Sophisticated
+27. **Clay & Sand** — `#d7c3a5`, `#c2a878`, `#f2e9d8`, accent: `#5a3e2b` (terracotta ink)
+28. **Fog Grey** — `#d8dcde`, `#eef1f3`, `#c2c8cc`, accent: `#2b3a42` (slate)
+29. **Dusty Rose** — `#e8c4c0`, `#f3dedd`, `#d49a94`, accent: `#6e3b3b` (dried rose)
+30. **Sage Studio** — `#c6d1be`, `#e3ead9`, `#aebb9c`, accent: `#2f3d2a` (deep olive)
+31. **Olive & Rust** — `#6b6b3a`, `#f0ead6`, accent: `#9c4a2f` (rust), bg: `#1c1c12`
+32. **Concrete Mono** — `#8c8c8c`, `#bdbdbd`, `#e0e0e0`, accent: `#ff3b00` (safety orange)
+
+### Vivid Light
+33. **Risograph Pop** — `#fff8e7`, `#ffd166`, accent duo: `#ef476f` + `#118ab2`
+34. **Candy Pastel** — `#ffe5ec`, `#ffc2d1`, `#fde2e4`, accent: `#8e44ad` (grape)
+35. **Y2K Chrome** — `#eef0ff`, `#d6dcff`, accent: `#8a2be2` + silver `#c0c0c0`
+36. **Citrus Mint** — `#f7fff0`, `#e4ffcc`, accent: `#00b894` + `#ff9f1c`
+
 ---
 
 ## 🔤 TYPOGRAPHY SYSTEMS (pick ONE)
@@ -48,6 +70,16 @@ This file contains a large variety of UI effects, techniques, and design pattern
 10. **Art Deco** — geometric letterforms, decorative caps, gold accents, symmetrical
 11. **Newspaper Stack** — mixed serif/sans, column-based, varied sizes like a broadsheet
 12. **Pixel/8-bit** — monospace with pixel-art aesthetic, grid-aligned, retro computing feel
+13. **Variable Weight Morph** — a single variable font where weight/width animates on scroll/hover
+14. **Outlined Ghost** — headings as outline-only (stroke) text, fill on hover/reveal
+15. **Stencil Military** — stencil-cut uppercase, utilitarian, strong horizontal rules
+16. **High-Fashion Didone** — thin-thick contrast serif (Didot/Bodoni feel), tiny tracked-out labels
+17. **Grotesk Neue** — neo-grotesque sans, tight optical sizing, functional captions
+18. **Blackletter Accent** — gothic/blackletter display for one hero word, clean sans body
+19. **Oversized Lowercase** — all-lowercase giant headings, soft and intimate tone
+20. **Mixed Script Duo** — serif display + mono labels + sans body, three-voice system
+21. **Vertical CJK Rhythm** — vertical text column as a decorative accent beside horizontal body
+22. **Kinetic Variable** — letters shift weight individually based on cursor proximity
 
 ---
 
@@ -68,8 +100,16 @@ This file contains a large variety of UI effects, techniques, and design pattern
 13. **Filmstrip** — narrow horizontal bands stacked vertically, cinematic aspect ratios
 14. **Newspaper Columns** — CSS columns with varied spans, flowing text
 15. **Sticky Layers** — sections with position:sticky creating layered reveal effect
-
----
+16. **Centered Spine** — a central vertical line/axis; content hangs alternately off the spine
+17. **Edge-to-Edge Fullbleed** — zero side margins, content touches viewport edges, raw and bold
+18. **Framed Border** — a thick persistent frame/border around the whole viewport, content inside
+19. **Index/Table-of-Contents** — left column acts as a live index, right column is scrolling content
+20. **Collage Scrapbook** — layered rotated panels, taped/pinned feel, intentional overlap and mess
+21. **Grid Reveal Modular** — strict modular grid where cells reveal/expand on interaction
+22. **Off-Canvas Horizontal Drawer** — primary content vertical, secondary slides in horizontally
+23. **Centered Orbit** — a fixed central element with sections orbiting/radiating around it
+24. **Asymmetric Two-Thirds** — persistent 1/3 sidebar vs 2/3 main, swapping sides per section
+25. **Poster Stack** — each section is a full poster/panel with its own distinct composition
 
 ## 🎬 HERO SECTION STYLES (pick ONE)
 
@@ -88,6 +128,16 @@ This file contains a large variety of UI effects, techniques, and design pattern
 13. **Typewriter Terminal** — text types itself character by character with blinking cursor
 14. **Scattered Letters** — letters scattered randomly, animate into position on load
 15. **Smoke/Fog** — layered semi-transparent gradients drifting like smoke
+16. **Marquee Hero** — giant infinite scrolling word band(s) as the entire hero
+17. **Image Grid Mosaic** — hero is a dense grid of abstract tiles that settle into place
+18. **Vertical Split Thirds** — three full-height vertical panels, each a different tone/word
+19. **Centered Badge/Seal** — a single rotating circular seal/emblem with text on a ring
+20. **Oversized Index Number** — a huge "01 / 05"-style numeral dominates the hero
+21. **CSS Gradient Aurora Field** — slow-moving conic/radial aurora with floating headline
+22. **Diagonal Marquee Cross** — two text bands crossing diagonally over each other
+23. **Fold/Origami Reveal** — hero unfolds in panels like paper on load
+24. **Negative Space Portrait** — headline shaped around an implied silhouette of empty space
+25. **Dot-Matrix Headline** — headline rendered as an animated dot/LED matrix
 
 ---
 
@@ -282,15 +332,91 @@ This file contains a large variety of UI effects, techniques, and design pattern
 
 ---
 
+## 🧱 SECTION ARCHITECTURE (pick ONE) — THE SINGLE BIGGEST ANTI-SAMENESS LEVER
+
+**Why this matters:** Templates look "the same" mostly because they reuse the SAME skeleton (hero → feature cards → stats counter → footer). To break this, each generation MUST choose a different section *set* and *order*. Do NOT default to the cards+counter formula every time.
+
+Pick ONE section recipe (the sequence of blocks, top to bottom):
+
+1. **Manifesto** — Hero → Long-form manifesto text → Pull-quote → Index list → Footer (NO cards, NO counters)
+2. **Gallery-First** — Hero → Full-bleed abstract gallery → Short statement → Minimal footer
+3. **Classic Product-ish** — Hero → 3 feature cards → Stats counters → CTA band → Footer
+4. **Editorial Essay** — Hero → Multi-column article → Inline captioned figures → Author/colophon footer
+5. **Showcase Index** — Hero → Numbered project index (01–06 list rows) → Expanding detail → Footer
+6. **Timeline/Process** — Hero → Vertical/horizontal timeline of steps → Quote → Footer
+7. **Bento Dashboard** — Hero → One large bento grid (mixed tiles: text, number, shape) → Footer
+8. **Single Statement** — Hero → ONE giant centered statement with scroll-reveal lines → tiny footer
+9. **Horizontal Chapters** — Hero → Horizontally-scrolling chapters → Vertical outro → Footer
+10. **Lookbook** — Hero → Alternating full-width image/text spreads → Marquee → Footer
+11. **FAQ/Dialogue** — Hero → Accordion dialogue sections → Statement → Footer
+12. **Comparison** — Hero → Two-column contrasts (this vs that) → Synthesis block → Footer
+13. **Grid Catalog** — Hero → Dense uniform grid of many small items → Filter illusion → Footer
+14. **Poster Series** — A sequence of 4–5 full-viewport posters, each self-contained → Footer
+
+**Rule:** The number of sections, whether counters/cards appear at all, and their order are DICTATED by this recipe — not by habit. At least every other generation should use a recipe WITHOUT feature-cards and WITHOUT a stats-counter block.
+
+---
+
+## 🔺 SHAPE & FORM LANGUAGE (pick ONE)
+
+Governs the geometry of every element (corners, dividers, decorative shapes, buttons):
+
+1. **Sharp Rectilinear** — zero border-radius, hard right angles, rulers and ticks
+2. **Soft Rounded** — generous border-radius (16–32px), pill buttons, bubbly
+3. **Organic Blob** — irregular blob/squircle shapes, border-radius morphing, no straight edges
+4. **Circular/Pill-Driven** — circles and pills everywhere, orbital motifs
+5. **Angular/Diagonal** — clip-path slants, parallelograms, 15–30° skews
+6. **Hexagonal/Faceted** — hex grids, faceted gem-like facets, polygonal
+7. **Mixed Hard+Soft** — intentional contrast: sharp containers with one soft hero element
+8. **Hand-drawn Irregular** — slightly wobbly borders, imperfect SVG strokes, sketchy
+
+---
+
+## 🌫️ SPATIAL DENSITY (pick ONE)
+
+Controls how packed vs airy the whole page feels — a huge driver of perceived uniqueness:
+
+1. **Extreme Minimal** — vast whitespace, few elements per viewport, slow pacing
+2. **Balanced Editorial** — comfortable rhythm, moderate density, clear hierarchy
+3. **Dense Maximal** — information-rich, tight spacing, lots on screen, energetic
+4. **Oversized Sparse** — few elements but each is HUGE, fills the viewport
+5. **Compact Modular** — small uniform modules packed into a strict grid
+
+---
+
+## 🎚️ TONAL MOOD (pick ONE)
+
+Overall brightness/contrast personality (keep distinct from the specific palette):
+
+1. **Pitch Dark / High Drama** — very dark bg, single glowing accent, cinematic
+2. **Bright / Optimistic** — light bg, airy, confident, lots of light
+3. **Muted / Editorial** — mid-tones, low saturation, refined and quiet
+4. **High-Contrast Punch** — stark black/white with one loud accent
+5. **Warm / Analog** — warm cast throughout, film-grain, nostalgic
+6. **Cool / Clinical** — cool blues/greys, precise, technical, calm
+
+---
+
 ## COMBINATION RULES
 
 When generating a template:
-1. Pick ONE from each major category above
-2. Ensure the combination makes visual sense (e.g., don't pair "Light Ethereal" palette with "Glitch Distortion" hero unless intentionally contrasting)
-3. The keyword theme should INFLUENCE but not DICTATE choices — use it as inspiration for which options feel most aligned
-4. NEVER use the same combination as the previous generation
-5. Aim for unexpected but harmonious pairings — this creates unique designs
-6. If a keyword strongly suggests a specific vibe (e.g., "neon" → cyberpunk), lean into it but still randomize other categories
+1. Pick ONE from each major category above — **including the new axes: Section Architecture, Shape & Form Language, Spatial Density, and Tonal Mood.** These four decide the skeleton and personality; never skip them.
+2. **Section Architecture is the top priority for variety.** If recent generations used cards + counters, you MUST pick a recipe without them. Vary the number and order of sections every time.
+3. Ensure the combination makes visual sense (e.g., don't pair "Light Ethereal" palette with "Glitch Distortion" hero unless intentionally contrasting). But also actively seek UNEXPECTED pairings — tension creates memorable designs.
+4. The keyword theme should INFLUENCE but not DICTATE choices — use it as inspiration, not a template.
+5. **NEVER reuse the previous generation's Section Architecture, Layout Pattern, Shape Language, or Hero style.** Track all of these across generations, not just colors.
+6. Shape & Form Language must be applied consistently to buttons, cards, dividers, and decorative SVG — this alone makes two sites feel completely different even with similar content.
+7. If a keyword strongly suggests a specific vibe (e.g., "neon" → cyberpunk), lean into it but still randomize every other axis.
+
+### Anti-Sameness Checklist (verify before generating)
+- [ ] Section Architecture differs from last generation
+- [ ] Not using cards+counters by default (only if the recipe calls for it)
+- [ ] Layout Pattern differs from last generation
+- [ ] Shape & Form Language differs from last generation
+- [ ] Hero style differs from last generation
+- [ ] Palette family (dark/light/bold/muted) rotated from last generation
+- [ ] Spatial Density differs (don't always do "balanced")
+- [ ] At least ONE unexpected/contrasting pairing present
 
 ---
 

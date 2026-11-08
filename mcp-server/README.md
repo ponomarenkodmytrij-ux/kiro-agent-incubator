@@ -2,7 +2,7 @@
 
 Minimal MCP server that exposes **one tool**: `gmail_create_draft_with_attachment`.
 
-Designed for the Incubator power — creates email drafts with PDF attachments.
+Designed for the Incubator agent — creates email drafts with PDF attachments.
 
 ## Security
 
@@ -44,7 +44,7 @@ Add to your `.kiro/settings/mcp.json` (workspace or user level):
   "mcpServers": {
     "gmail-drafts": {
       "command": "python",
-      "args": ["path/to/powers/incubator/mcp-server/gmail_draft_server.py"],
+      "args": ["path/to/kiro-agent-incubator/mcp-server/gmail_draft_server.py"],
       "disabled": false,
       "autoApprove": ["gmail_create_draft_with_attachment"]
     }
@@ -59,7 +59,7 @@ Or with `uv`:
   "mcpServers": {
     "gmail-drafts": {
       "command": "uv",
-      "args": ["run", "path/to/powers/incubator/mcp-server/gmail_draft_server.py"],
+      "args": ["run", "path/to/kiro-agent-incubator/mcp-server/gmail_draft_server.py"],
       "disabled": false,
       "autoApprove": ["gmail_create_draft_with_attachment"]
     }

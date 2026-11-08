@@ -28,7 +28,7 @@ def parse_kv(path: Path) -> dict[str, str]:
 
 
 def load_env() -> dict[str, str]:
-    """Load .env.incubator (INCUBATOR_ENV override, else search upwards from the power)."""
+    """Load .env.incubator (INCUBATOR_ENV override, else search upwards from the repo)."""
     override = os.environ.get("INCUBATOR_ENV")
     candidates = [Path(override)] if override else [p / ".env.incubator" for p in SCRIPTS.parents]
     path = next((c for c in candidates if c.is_file()), None)

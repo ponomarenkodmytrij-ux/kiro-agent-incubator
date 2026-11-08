@@ -1,0 +1,50 @@
+{
+  "name": "incubator",
+  "description": "Incubator - сам обирає дизайн (pick.py), пише унікальну частину шаблону, build.py збирає HTML + PDF (перевірка мінімуму сторінок з .env.incubator) і автоматично створює чернетку листа в Gmail",
+  "tools": [
+    "@gmail/gmail_create_draft_with_attachment",
+    "glob",
+    "grep",
+    "read",
+    "shell",
+    "write"
+  ],
+  "allowedTools": [
+    "read",
+    "write",
+    "shell",
+    "glob",
+    "grep",
+    "@gmail/gmail_create_draft_with_attachment"
+  ],
+  "model": "auto",
+  "welcomeMessage": "Incubator ready. Напиши «go» (або 1-4 ключових слова) — дизайн оберу сам, лист збережу в чернетки.",
+  "permissions": {
+    "rules": [
+      {
+        "capability": "fs_read",
+        "effect": "allow"
+      },
+      {
+        "capability": "fs_write",
+        "effect": "allow"
+      },
+      {
+        "capability": "shell",
+        "effect": "allow"
+      },
+      {
+        "capability": "mcp",
+        "match": [
+          "gmail/gmail_create_draft_with_attachment"
+        ],
+        "effect": "allow"
+      },
+      {
+        "capability": "skill",
+        "effect": "allow"
+      }
+    ]
+  },
+  "prompt": "{{PROMPT}}"
+}
